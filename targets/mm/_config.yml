@@ -1,0 +1,176 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+port:               4010
+title: Smartdown
+email:
+description: >- # this means to ignore newlines until "baseurl:"
+  A Javascript library for translating, rendering, and interacting with
+  Smartdown documents. A *declarative*, *literate* and *reactive* authoring
+  technology for writing technical and non-technical documents that are
+  compelling and easy to share and publish within many existing forums and
+  blogging systems. Smartdown is designed for blogging, technical communication,
+  and teaching. Smartdown simplifies the creation of *Explorable Explanations*,
+  which are prose documents with embedded interactive content such as charts,
+  graphs, and featherweight programs called *playables*.
+twitter_username: TheDoctorBud
+github_username: smartdown
+minimal_mistakes_skin: "air" # https://mmistakes.github.io/minimal-mistakes/docs/configuration/#theme
+logo: "/assets/images/SmartdownLogo.png"
+
+# Build settings
+# markdown: kramdown
+markdown_ext: 'markdown'
+excerpt_separator: <!--more-->
+
+search: true
+
+# remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
+# Outputting
+permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+include:
+  - posts
+  - pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - dist
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - _hide
+  - README.md
+  - targets/cb/
+  - targets/legacy/
+  - "*.sh"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+author:
+  name   : "Smartdown"
+  avatar : "/assets/images/SmartdownLogo.png"
+  bio: >- # this means to ignore newlines until "baseurl:"
+    Smartdown is a web-based authoring technology for blogging, technical
+    communication, and teaching. It simplifies authoring of
+    [Explorable Explanations](https://en.wikipedia.org/wiki/Explorable_explanation),
+    documents with interactive content like diagrams, animations, and other *playables*.
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://smartdown.io"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/TheDoctorBud"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/smartdown"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
+
+header:
+  overlay_color: "#5e616c"
+  #overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_image: /assets/images/banner-982162_1920.jpg
+  actions:
+    - label: "<i class='fas fa-download'></i> Install now"
+      url: "/docs/quick-start-guide/"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/TheDoctorBud"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/smartdown"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
+
+### Non-defaults
+
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title/
+  rawposts:
+    output: true
+    permalink: /posts/:title
+  pages:
+    output: true
+    permalink: /pages/:title/
+  rawpages:
+    output: true
+    permalink: /pages/:title
+  about:
+    output: true
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: "rawposts"
+      type: "posts"
+    values:
+      layout: "raw"
+  - scope:
+      path: "rawpages"
+      type: "pages"
+    values:
+      layout: "raw"
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+keep_files:
+  - posts
+  - pages
+  - categories
+  - assets
+  - img
