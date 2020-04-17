@@ -4,16 +4,15 @@ smartdown: true
 description: This is what I do.
 ---
 
-### About the Site
+### About the Site (0.0.2)
 
-Based on [smartdown/blog-kit](https://github.com/smartdown/blog-kit) (v 0.0.4.2).
+Based on [smartdown/blog-kit](https://github.com/smartdown/blog-kit) (v 0.0.7).
 
 Based on [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) blog theme.
 
 This is a [GitHub Pages](https://pages.github.com)-based blog that utilizes the Jekyll services provided by GitHub, and optionally enables some posts and pages to utilize Smartdown, an in-browser renderer of enhanced Markdown and a reactive runtime.
 
 The source for this site is at [smartdown/blog-kit](https://github.com/smartdown/blog-kit/).
-
 
 
 > smartdown - A Javascript library for translating, rendering, and interacting with Smartdown documents.
@@ -139,4 +138,5 @@ This software is still incomplete in its implementation, documentation, and attr
 
 ---
 
-The source for this page is at [`/pages/About.md`]({{ site.baseurl }}/pages/About.md).
+*Page source: [`/pages/About.md`](/pages/About.md#-blank)*
+

@@ -7,16 +7,16 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-body.layout--splash {
-	.page__title {
-		color: tomato !important;
-	}
+// body.layout--splash {
+// 	.page__title {
+// 		color: tomato !important;
+// 	}
 
-	.page__lead {
-		color: lavender !important;
-	}
+// 	.page__lead {
+// 		color: lavender !important;
+// 	}
 
-	.btn.btn--light-outline {
-		color: chartreuse !important;
-	}
-}
+// 	.btn.btn--light-outline {
+// 		color: chartreuse !important;
+// 	}
+// }

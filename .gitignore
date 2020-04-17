@@ -14,7 +14,7 @@ targets/*/_site/
 targets/*/.sass-cache/
 targets/*/.jekyll-cache/
 targets/*/.jekyll-metadata
-targets/legacy/_sass/
+targets/legacy/_sass
 *.deleteme
 *.hide
 
