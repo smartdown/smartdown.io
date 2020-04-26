@@ -9,12 +9,13 @@ header:
   actions:
     - label: "<i class='fas fa-palette'></i> Explore the Smartdown Gallery"
       url: "https://smartdown.site"
+    - label: "<i class='fab fa-github'></i> GitHub Source"
+      url: "https://github.com/smartdown/smartdown"
     - label: "<i class='fas fa-cheese'></i> Smartdown is like Cheese, What?"
       url: "/cheese"
 excerpt: >
   Easy-to-use technology for authoring compelling interactive explanations
   of the knowledge you have to share<br />
-  <small><a href="https://github.com/smartdown/smartdown">GitHub Source</a></small>
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png
     alt: "customizable"
@@ -39,4 +40,4 @@ feature_row:
     btn_label: "Learn more"
 ---
 
-{% include feature_row %}
+{% include feature_row type="left" %}

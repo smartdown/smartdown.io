@@ -37,8 +37,9 @@ excerpt_separator: <!--more-->
 
 search: true
 
-# remote_theme: mmistakes/minimal-mistakes
-theme: minimal-mistakes-jekyll
+# Build settings
+theme: minimal-mistakes-jekyll # blog-kit-theme
+remote_theme: mmistakes/minimal-mistakes # blog-kit-remote_theme
 
 # Outputting
 permalink: /:categories/:title/
@@ -49,6 +50,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 include:
   - posts
   - pages
+  - classic/
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -144,7 +146,7 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
+# _pages
   - scope:
       path: "_pages"
       type: pages

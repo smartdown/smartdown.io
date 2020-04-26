@@ -26,6 +26,6 @@ The source for this site is at [smartdown/blog-kit](https://github.com/smartdown
 ## Version History
 
 0.0.1 - Initial version of smartdown.io blog, based on blog-kit v0.0.4.
-0.0.2 - blog-kit 0.0.7.
+0.0.2 - blog-kit 0.0.7. Adds a landing page for the blog. Adds Classic section with existing smartdown.io content.
 
 

@@ -1,0 +1,295 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="initial-scale=1, width=device-width">
+    <title>Smartdown - Share knowledge with less syntax</title>
+    <link rel="stylesheet"
+      href="{{ site.baseurl }}/assets/style/normalize8.0.0.css">
+    <link rel="stylesheet"
+      href="{{ site.baseurl }}/assets/style/fonts.css">
+    <link rel="stylesheet"
+      href="{{ site.baseurl }}/assets/style/main.css">
+    <link rel="apple-touch-icon"
+      sizes="57x57"
+      href="{{ site.baseurl }}/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon"
+      sizes="60x60"
+      href="{{ site.baseurl }}/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon"
+      sizes="72x72"
+      href="{{ site.baseurl }}/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon"
+      sizes="76x76"
+      href="{{ site.baseurl }}/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon"
+      sizes="114x114"
+      href="{{ site.baseurl }}/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon"
+      sizes="120x120"
+      href="{{ site.baseurl }}/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon"
+      sizes="144x144"
+      href="{{ site.baseurl }}/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon"
+      sizes="152x152"
+      href="{{ site.baseurl }}/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ site.baseurl }}/assets/favicons/apple-icon-180x180.png">
+    <link rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="{{ site.baseurl }}/assets/favicons/android-icon-192x192.png">
+    <link rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ site.baseurl }}/assets/favicons/favicon-32x32.png">
+    <link rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="{{ site.baseurl }}/assets/favicons/favicon-96x96.png">
+    <link rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ site.baseurl }}/assets/favicons/favicon-16x16.png">
+    <link rel="manifest"
+      href="{{ site.baseurl }}/assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor"
+      content="#ffffff">
+    <meta name="msapplication-TileImage"
+      content="{{ site.baseurl }}/assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color"
+      content="#ffffff">
+    <script>
+    function toggleScreenshot(target) {
+      target.classList.toggle('zoomed');
+      const mask = document.getElementById('mask');
+      mask.classList.toggle('masked');
+    }
+
+    function cancelMask(target) {
+      const zoomed = document.querySelectorAll('.screenshot.zoomed');
+      zoomed.forEach(function(z) {
+        z.classList.remove('zoomed');
+      });
+      const mask = document.getElementById('mask');
+      mask.classList.remove('masked');
+    }
+    </script>
+  </head>
+
+  <body>
+    <div id="mask"
+      onclick="cancelMask()">
+    </div>
+    <div class="container">
+      <h5 class="contact-me"> I may have given you a <a href="#logo"> Smartdown Logo </a> sticker in some random pub, coffee shop, or meeting; or you may have found your way to this site via some other link. If you want to contact me, email me at <a href="mailto:smartdown@quantumclay.com">smartdown@quantumclay.com</a> or check out my blog and resume/CV at <a href="https://doctorbud.com">https://doctorbud.com</a>. </h5>
+      <div class="site-box">
+        <div class="hgroup">
+          <h2 class="title">Smartdown</h2>
+          <a href="#logo">
+            <img class="logo"
+              src="{{ site.baseurl }}/assets/img/StickerMuleNov272018.svg"
+              alt="Smartdown Logo">
+          </a>
+          <h3 class="tagline"> Less Syntax, More 'Splainin' </h3>
+          <h4>
+            Use Smartdown technology to more easily create scientific, technical, mathematical and artistic
+            articles that are expressive, interactive, and rich with diverse content types.
+          </h4>
+        </div>
+        <div class="screenshots">
+          <div onclick="toggleScreenshot(this)"
+            class="screenshot">
+            <h4>Turns this &hellip;</h4>
+            <img alt="Welcome Screenshot Raw"
+              src="{{ site.baseurl }}/assets/img/WelcomeScreenshotRaw.png">
+          </div>
+          <div onclick="toggleScreenshot(this)"
+            class="screenshot">
+            <h4> &hellip;Into this</h4>
+            <img alt="Welcome Screenshot Rendered"
+              src="{{ site.baseurl }}/assets/img/WelcomeScreenshotRendered.png">
+          </div>
+        </div>
+        <section>
+          <h3>Smartdown Viewer and Gallery</h3>
+          <h4>Demonstrations, Possibilities, Examples</h4>
+          <p>
+            The Smartdown Viewer Site is an example application that can view Smartdown documents as well as showing their raw Smartdown text. The Viewer provides a rich set of example from the
+            <a target="_blank" rel="noopener noreferrer" href="http://github.com/smartdown/gallery">Smartdown Examples Gallery</a>.
+          </p>
+          <p>
+             It is very basic and based on AngularJS and CodeMirror, but it provides a useful way to view the Smartdown source side-by-side with its rendering. The source code may provide inspiration for other Smartdown integrations.
+          </p>
+          <ul>
+            <li>
+              <a target="_blank"
+                rel="noopener noreferrer"
+                href="https://smartdown.site">https://smartdown.site</a>
+            </li>
+            <li>
+              <a target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/smartdown/viewer/">Viewer GitHub Source</a>
+            </li>
+            <li>
+              <a
+                href="more/#gallery">Smartdown Gallery</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Smartdown Core Library</h3>
+          <h4>For Developers and Integrators</h4>
+          <p>
+            <b>smartdown</b> - A Javascript library for translating, rendering, and interacting with Smartdown documents.
+          </p>
+          <p>
+            The core of any Smartdown integration includes the Smartdown Javascript library and associated resources.
+          </p>
+          <ul>
+            <li>
+              <a target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/smartdown/smartdown/">Smartdown GitHub Source</a>
+            </li>
+            <li>
+              <a target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.npmjs.com/package/smartdown">Smartdown via NPM</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Smartdown Integrations</h3>
+          <blockquote class="quote">
+            Smartdown is like Cheese! You can put stuff in it, and you can put it in stuff.
+            <br>
+            - Dan Keith, December 2018
+          </blockquote>
+          <p> For examples how Smartdown may be embedded into other systems, and how other systems can be embedded in Smartdown, consider the following: </p>
+          <ul>
+            <li>
+              <a
+                href="more/#glitch">Smartdown on Glitch</a>
+            </li>
+            <li>
+              <a
+                href="more/#impress">Slideshows via Impress.js</a>
+            </li>
+            <li>
+              <a
+                href="more/#solid">Smartdown on Solid</a>
+            </li>
+            <li>
+              <a
+                href="more/#gists">Smartdown on GitHub Gists</a>
+            </li>
+            <li>
+              <a
+                href="more/#poster">Smartdown Posters</a>
+            </li>
+            <li>
+              <a
+                href="more/#blocks">Smartdown on bl.ocks.org</a>
+            </li>
+            <li>
+                <a target="_blank"
+                rel="noopener noreferrer"
+                href="https://wildthinks.org/">WildThinks</a> uses Smartdown to explore and present mathematical
+                concepts in an engaging and interactive format.
+            </li>
+            <li>
+              <a
+                href="more/">&hellip; and much more!</a>
+            </li>
+          </ul>
+        </section>
+        <section id="logo">
+          <h3>About the Smartdown Logo</h3>
+          <img class="logo"
+            src="{{ site.baseurl }}/assets/img/StickerMuleNov272018.svg"
+            alt="Smartdown Logo">
+          <p> The Smartdown Logo above was developed using Smartdown and explained in the blog post(s) below: </a>
+          </p>
+          <ul>
+            <li>
+              <a target="_blank"
+                rel="noopener noreferrer"
+                href="https://doctorbud.com/celestial-toys/post/2018-10-08-building-a-logo-part-1/#index"> Building a Logo, Part 1 </a>
+            </li>
+            <li>
+              <a target="_blank"
+                rel="noopener noreferrer"
+                href="https://doctorbud.com/celestial-toys/post/2018-10-13-building-a-logo-part-2/#index"> Building a Logo, Part 2 </a>
+            </li>
+            <li>
+              <a target="_blank"
+                rel="noopener noreferrer"
+                href="https://doctorbud.com/celestial-toys/post/2018-10-20-building-a-logo-part-3/?summary=white/indigo/lightgreen/tomato/15/30"> Building a Logo, Part 3 (Workbench) </a>
+            </li>
+            <li>
+              <a target="_blank"
+                rel="noopener noreferrer"
+                href="https://doctorbud.com/celestial-toys/post/2018-10-27-building-a-logo-part-4/#index"> Building a Logo, Part 4 (Stickers!!!) </a>
+            </li>
+            <li>
+              <a target="_blank"
+                rel="noopener noreferrer"
+                href="https://doctorbud.com/celestial-toys/post/2018-11-23-logo-version-2/#index"> Building a Logo, V2 (Current Logo) </a>
+            </li>
+          </ul>
+        </section>
+        <div class="share-bar">
+          <div class="share-opt">
+            <a target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/smartdown/">
+              <img src="{{ site.baseurl }}/assets/img/github-logo.png"
+                width="28"
+                height="28"
+                alt="GitHub">
+            </a>
+          </div>
+          <div class="share-opt">
+            <a class="twitter-share-button"
+              href="https://twitter.com/share"
+              data-count="none"
+              data-size="large"
+              data-text="Smartdown: Smartdown">Tweet about Smartdown</a>
+          </div>
+          <div class="share-opt">
+            <a target="_blank"
+              rel="noopener noreferrer"
+              href="https://doctorbud.com">doctorbud.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer">
+        &nbsp;
+      </div>
+
+
+    </div>
+
+    <script>
+    ! function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, "script", "twitter-wjs");
+    </script>
+  </body>
+
+</html>
